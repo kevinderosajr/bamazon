@@ -26,7 +26,6 @@ function quantityInput(){
     });
 }
 
-//Function for customers to purchase items
 function purchasePrompt(){
     inquirer.prompt([
         {
@@ -46,7 +45,6 @@ function purchasePrompt(){
     ])
 }
 
-//Prevent negative integer quantities
 function validateData(value){
     let integer = Number.isInteger(parseFloat(value));
     let sign = Math.sign(value);
